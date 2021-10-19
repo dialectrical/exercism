@@ -51,7 +51,8 @@ export function frontDoorPassword(word) {
  * @returns {string}
  */
 export function backDoorResponse(line) {
-  return line.slice(line.length - 1, line.length);
+  line = line.trimEnd();
+  return line.slice(line.length - 1);
   throw new Error("Implement the backDoorResponse function");
 }
 
