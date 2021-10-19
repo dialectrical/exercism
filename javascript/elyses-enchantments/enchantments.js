@@ -51,6 +51,8 @@ export function insertItemAtTop(cards, newCard) {
  * @returns {number[]} the cards without the removed card
  */
 export function removeItem(cards, position) {
+  cards = cards.slice(0, position).concat(cards.slice(position + 1));
+  return cards;
   throw new Error("Implement the removeItem function");
 }
 
