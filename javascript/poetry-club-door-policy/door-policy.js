@@ -27,7 +27,8 @@
  * @returns {string}
  */
 export function frontDoorResponse(line) {
-  throw new Error('Implement the frontDoorResponse function');
+  return line.slice(0, 1);
+  throw new Error("Implement the frontDoorResponse function");
 }
 
 /**
@@ -38,7 +39,7 @@ export function frontDoorResponse(line) {
  * @returns {string} the front door password
  */
 export function frontDoorPassword(word) {
-  throw new Error('Implement the frontDoorPassword function');
+  throw new Error("Implement the frontDoorPassword function");
 }
 
 /**
@@ -49,7 +50,7 @@ export function frontDoorPassword(word) {
  * @returns {string}
  */
 export function backDoorResponse(line) {
-  throw new Error('Implement the backDoorResponse function');
+  throw new Error("Implement the backDoorResponse function");
 }
 
 /**
@@ -60,5 +61,5 @@ export function backDoorResponse(line) {
  * @returns {string} the back door password
  */
 export function backDoorPassword(word) {
-  throw new Error('Implement the backDoorPassword function');
+  throw new Error("Implement the backDoorPassword function");
 }
