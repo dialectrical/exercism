@@ -78,6 +78,8 @@ export function removeItemFromTop(cards) {
  * @returns {number[]} the cards including the new card
  */
 export function insertItemAtBottom(cards, newCard) {
+  cards.unshift(newCard);
+  return cards;
   throw new Error("Implement the insertItemAtBottom function");
 }
 
