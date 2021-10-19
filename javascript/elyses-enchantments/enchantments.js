@@ -37,6 +37,8 @@ export function setItem(cards, position, replacementCard) {
  * @returns {number[]} the cards with the newCard applied
  */
 export function insertItemAtTop(cards, newCard) {
+  cards.push(newCard);
+  return cards;
   throw new Error("Implement the insertItemAtTop function");
 }
 
