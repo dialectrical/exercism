@@ -39,6 +39,7 @@ export function frontDoorResponse(line) {
  * @returns {string} the front door password
  */
 export function frontDoorPassword(word) {
+  return word.slice(0, 1) + word.slice(1).toLowerCase();
   throw new Error("Implement the frontDoorPassword function");
 }
 
