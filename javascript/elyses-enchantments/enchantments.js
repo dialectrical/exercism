@@ -91,6 +91,8 @@ export function insertItemAtBottom(cards, newCard) {
  * @returns {number[]} the cards without the removed card
  */
 export function removeItemAtBottom(cards) {
+  cards.shift();
+  return cards;
   throw new Error("Implement the removeItemAtBottom function");
 }
 
